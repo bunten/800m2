@@ -1,0 +1,231 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f0f3f7;
+    color: #263445;
+}
+
+header {
+    background: #142d4e;
+    color: white;
+    text-align: center;
+    padding: 24px 10px;
+}
+
+header h1 {
+    font-size: 22px;
+    margin: 0;
+}
+
+header p {
+    color: #c8d8ec;
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 850px;
+    margin: auto;
+    padding: 12px;
+}
+
+.panel {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+h2 {
+    color: #174c80;
+    border-bottom: 2px solid #dce7f2;
+    padding-bottom: 10px;
+    font-size: 19px;
+}
+
+p, li {
+    line-height: 1.8;
+}
+
+.upload-area {
+    background: #edf4fc;
+    padding: 14px;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+.upload-area label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    width: 100%;
+    font-size: 14px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 13px;
+    background: #dce7f2;
+    color: #173c60;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+.view-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.view-buttons button {
+    flex: 1;
+}
+
+button.active {
+    background: #174c80;
+    color: white;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    background: #101820;
+    border-radius: 8px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.frame-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.frame-buttons button {
+    flex: 1;
+}
+
+.status {
+    padding: 13px;
+    background: #edf4fc;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.metric {
+    background: #edf4fc;
+    padding: 16px 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.metric span {
+    display: block;
+    font-size: 13px;
+}
+
+.metric strong {
+    display: block;
+    font-size: 25px;
+    color: #174c80;
+    margin: 12px 0;
+}
+
+.metric small {
+    color: #64748b;
+    font-size: 11px;
+}
+
+.hint {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.result-box {
+    background: #edf4fc;
+    padding: 14px;
+    border-radius: 8px;
+    margin: 10px 0;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.clear-button {
+    background: #a83c3c;
+    color: white;
+    width: 100%;
+    margin-top: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    color: #718096;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 19px;
+    }
+
+    .panel {
+        padding: 14px;
+    }
+
+    .metric strong {
+        font-size: 21px;
+    }
+
+    .frame-buttons button {
+        font-size: 13px;
+        padding: 12px 5px;
+    }
+}
+
